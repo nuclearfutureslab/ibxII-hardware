@@ -3,6 +3,8 @@
 IBX ]\[ is an information barrier setup for nuclear warhead verification with an Apple II ([Details](www.vintageverification.org)).
 This repository contains schematics and layout files for two custom Apple II peripheral cards.
 
+The KiCad files need the [Apple \]\[ Edge Connector Template](http://www.xjmaas.nl/my-apple-collection/apple-edge-connector-template-for-kicad/) in the parent directory.
+
 ## ADC Board
 Apple II peripheral card for A/D conversion of signals from radiation detectors (scintillator/photo multiplier combination). The card includes all necessary parts - pre-amplifier, amplification & pulse shaping, peak-detect and hold circuit, ADC timing circuit. Also included are 8 LEDs that can be toggled by writing to a specific Apple II memory location.
 
