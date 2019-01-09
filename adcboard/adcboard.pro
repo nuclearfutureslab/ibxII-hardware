@@ -1,4 +1,4 @@
-update=Thu 28 Dec 2017 02:16:10 PM CET
+update=Tue 09 Jan 2018 05:27:12 PM EST
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=../../ibxII-hardware
@@ -140,3 +130,13 @@ LibName98=zetex
 LibName99=Zilog
 LibName100=../../Apple2_bus/Apple2_bus
 LibName101=ibx
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

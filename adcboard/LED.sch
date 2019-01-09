@@ -1,50 +1,10 @@
-EESchema Schematic File Version 2
-LIBS:ac-dc
-LIBS:adc-dac
-LIBS:Altera
-LIBS:analog_devices
-LIBS:analog_switches
-LIBS:atmel
-LIBS:audio
+EESchema Schematic File Version 4
 LIBS:Battery_Management
-LIBS:bbd
-LIBS:bosch
-LIBS:brooktre
 LIBS:Connector
-LIBS:contrib
-LIBS:cypress
-LIBS:dc-dc
-LIBS:device
-LIBS:digital-audio
 LIBS:Diode
-LIBS:Display
-LIBS:driver_gate
-LIBS:dsp
 LIBS:DSP_Microchip_DSPIC33
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:Espressif
-LIBS:FPGA_Actel
-LIBS:ftdi
-LIBS:gennum
 LIBS:Graphic
-LIBS:hc11
-LIBS:infineon
-LIBS:intel
-LIBS:interface
-LIBS:intersil
-LIBS:ir
-LIBS:Lattice
 LIBS:LED
-LIBS:LEM
-LIBS:linear
-LIBS:Logic_74xgxx
-LIBS:Logic_74xx
-LIBS:Logic_CMOS_4000
-LIBS:Logic_CMOS_IEEE
-LIBS:logic_programmable
-LIBS:Logic_TTL_IEEE
-LIBS:maxim
 LIBS:MCU_Microchip_PIC10
 LIBS:MCU_Microchip_PIC12
 LIBS:MCU_Microchip_PIC16
@@ -54,58 +14,25 @@ LIBS:MCU_Microchip_PIC32
 LIBS:MCU_NXP_Kinetis
 LIBS:MCU_NXP_LPC
 LIBS:MCU_NXP_S08
-LIBS:MCU_ST_STM32
 LIBS:MCU_ST_STM8
 LIBS:MCU_Texas_MSP430
 LIBS:Mechanical
-LIBS:memory
-LIBS:microchip
-LIBS:microcontrollers
-LIBS:modules
-LIBS:motor_drivers
 LIBS:Motor
-LIBS:motorola
-LIBS:nordicsemi
-LIBS:nxp
-LIBS:onsemi
-LIBS:opto
-LIBS:Oscillators
-LIBS:philips
-LIBS:powerint
 LIBS:power
 LIBS:Power_Management
 LIBS:pspice
-LIBS:references
-LIBS:regul
 LIBS:Relay
-LIBS:rfcom
-LIBS:RFSolutions
 LIBS:Sensor_Current
-LIBS:sensors
-LIBS:silabs
-LIBS:siliconi
-LIBS:supertex
 LIBS:Switch
-LIBS:texas
 LIBS:Transformer
-LIBS:Transistor
-LIBS:triac_thyristor
 LIBS:Valve
-LIBS:video
-LIBS:wiznet
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:xilinx
-LIBS:zetex
-LIBS:Zilog
 LIBS:Apple2_bus
 LIBS:ibx
-LIBS:rev1-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -116,7 +43,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L GND #PWR060
+L power:GND #PWR060
 U 1 1 5A366AE4
 P 6575 4960
 F 0 "#PWR060" H 6575 4710 50  0001 C CNN
@@ -127,7 +54,7 @@ F 3 "" H 6575 4960 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 7400 U?
+L 74xx:7400 U?
 U 3 1 5A366AEA
 P 5385 4060
 AR Path="/5A366AEA" Ref="U?"  Part="3" 
@@ -140,7 +67,7 @@ F 3 "" H 5385 4060 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D301
+L Device:LED D301
 U 1 1 5A366AF1
 P 7475 2960
 F 0 "D301" H 7475 3060 50  0000 C CNN
@@ -151,7 +78,7 @@ F 3 "" H 7475 2960 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D302
+L Device:LED D302
 U 1 1 5A366AF8
 P 7775 3110
 F 0 "D302" H 7775 3210 50  0000 C CNN
@@ -162,7 +89,7 @@ F 3 "" H 7775 3110 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D303
+L Device:LED D303
 U 1 1 5A366AFF
 P 7475 3260
 F 0 "D303" H 7475 3360 50  0000 C CNN
@@ -173,7 +100,7 @@ F 3 "" H 7475 3260 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D304
+L Device:LED D304
 U 1 1 5A366B06
 P 7775 3410
 F 0 "D304" H 7775 3510 50  0000 C CNN
@@ -184,7 +111,7 @@ F 3 "" H 7775 3410 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D305
+L Device:LED D305
 U 1 1 5A366B0D
 P 7475 3560
 F 0 "D305" H 7475 3660 50  0000 C CNN
@@ -195,7 +122,7 @@ F 3 "" H 7475 3560 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D306
+L Device:LED D306
 U 1 1 5A366B14
 P 7775 3710
 F 0 "D306" H 7775 3810 50  0000 C CNN
@@ -206,7 +133,7 @@ F 3 "" H 7775 3710 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D307
+L Device:LED D307
 U 1 1 5A366B1B
 P 7475 3860
 F 0 "D307" H 7475 3960 50  0000 C CNN
@@ -217,7 +144,7 @@ F 3 "" H 7475 3860 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D308
+L Device:LED D308
 U 1 1 5A366B22
 P 7775 4010
 F 0 "D308" H 7775 4110 50  0000 C CNN
@@ -228,7 +155,7 @@ F 3 "" H 7775 4010 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R301
+L Device:R R301
 U 1 1 5A366B29
 P 8275 2960
 F 0 "R301" V 8355 2960 50  0000 C CNN
@@ -239,7 +166,7 @@ F 3 "" H 8275 2960 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR061
+L power:GND #PWR061
 U 1 1 5A366B30
 P 8675 4460
 F 0 "#PWR061" H 8675 4210 50  0001 C CNN
@@ -282,7 +209,7 @@ D5
 Text Label 5875 3860 0    60   ~ 0
 D4
 $Comp
-L 74LS374 U?
+L 74xx:74LS374 U?
 U 1 1 5A366B46
 P 6575 3660
 AR Path="/5A366B46" Ref="U?"  Part="1" 
@@ -295,7 +222,7 @@ F 3 "" H 6575 3660 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R309
+L Device:R_Small R309
 U 1 1 5A366B4D
 P 6075 4710
 F 0 "R309" H 6105 4730 50  0000 L CNN
@@ -306,7 +233,7 @@ F 3 "" H 6075 4710 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R302
+L Device:R R302
 U 1 1 5A366B54
 P 8275 3110
 F 0 "R302" V 8355 3110 50  0000 C CNN
@@ -317,7 +244,7 @@ F 3 "" H 8275 3110 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R303
+L Device:R R303
 U 1 1 5A366B5B
 P 8275 3260
 F 0 "R303" V 8355 3260 50  0000 C CNN
@@ -328,7 +255,7 @@ F 3 "" H 8275 3260 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R304
+L Device:R R304
 U 1 1 5A366B62
 P 8275 3410
 F 0 "R304" V 8355 3410 50  0000 C CNN
@@ -339,7 +266,7 @@ F 3 "" H 8275 3410 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R305
+L Device:R R305
 U 1 1 5A366B69
 P 8275 3560
 F 0 "R305" V 8355 3560 50  0000 C CNN
@@ -350,7 +277,7 @@ F 3 "" H 8275 3560 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R306
+L Device:R R306
 U 1 1 5A366B70
 P 8275 3710
 F 0 "R306" V 8355 3710 50  0000 C CNN
@@ -361,7 +288,7 @@ F 3 "" H 8275 3710 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R307
+L Device:R R307
 U 1 1 5A366B77
 P 8275 3860
 F 0 "R307" V 8355 3860 50  0000 C CNN
@@ -372,7 +299,7 @@ F 3 "" H 8275 3860 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R308
+L Device:R R308
 U 1 1 5A366B7E
 P 8275 4010
 F 0 "R308" V 8355 4010 50  0000 C CNN
@@ -389,7 +316,7 @@ D[0..7]
 Text Notes 5730 3440 3    25   ~ 0
 High nibble reversed\nfor easier layouting.
 $Comp
-L +5V #PWR062
+L power:+5V #PWR062
 U 1 1 5A366B89
 P 6575 2555
 F 0 "#PWR062" H 6575 2405 50  0001 C CNN
@@ -400,7 +327,7 @@ F 3 "" H 6575 2555 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C301
+L Device:C_Small C301
 U 1 1 5A366B8F
 P 6830 2750
 F 0 "C301" H 6750 2685 35  0000 L CNN
@@ -411,7 +338,7 @@ F 3 "" H 6830 2750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR063
+L power:GND #PWR063
 U 1 1 5A366B96
 P 6830 2850
 F 0 "#PWR063" H 6830 2600 50  0001 C CNN
@@ -547,7 +474,7 @@ WR
 Text HLabel 5085 4160 0    60   Input ~ 0
 O0
 $Comp
-L 7400 U?
+L 74xx:7400 U?
 U 5 1 5A36A760
 P 2660 4960
 AR Path="/59DEDB08/5A36A760" Ref="U?"  Part="5" 
@@ -563,7 +490,7 @@ F 3 "" H 2660 4960 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR064
+L power:GND #PWR064
 U 1 1 5A36A767
 P 2660 5460
 F 0 "#PWR064" H 2660 5210 50  0001 C CNN
@@ -574,7 +501,7 @@ F 3 "" H 2660 5460 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR065
+L power:+5V #PWR065
 U 1 1 5A36A76D
 P 2660 4155
 F 0 "#PWR065" H 2660 4005 50  0001 C CNN
@@ -585,7 +512,7 @@ F 3 "" H 2660 4155 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C302
+L Device:C_Small C302
 U 1 1 5A36A773
 P 2915 4350
 F 0 "C302" H 2835 4285 35  0000 L CNN
@@ -596,7 +523,7 @@ F 3 "" H 2915 4350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR066
+L power:GND #PWR066
 U 1 1 5A36A77A
 P 2915 4450
 F 0 "#PWR066" H 2915 4200 50  0001 C CNN
