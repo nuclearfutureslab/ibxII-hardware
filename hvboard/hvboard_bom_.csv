@@ -1,0 +1,41 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,DigiKey
+1,,A2_BUS,BUS101,A2_BUS,BUS_A2,1,,
+2,"Unpolarized capacitor, small symbol",C_Small,C101 C103 C105 C106 C107 C109,0.1µF,FG18,6,https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf,445-173265-1-ND
+3,"Unpolarized capacitor, small symbol",C_Small,C110,0.47µF,FG18,1,https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H474KRT06.pdf,445-173276-1-ND
+4,"Unpolarized capacitor, small symbol",C_Small,C104 C108,2.2µF,FG14,2,https://product.tdk.com/info/en/documents/chara_sheet/FG14X7R1H225KRT06.pdf,445-173138-1-ND
+5,"Polarized capacitor, small US symbol",CP1_Small,C102,47µF,CP_Radial_D6.3mm_P2.50mm,1,https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1022.pdf,P15400-ND
+6,Light emitting diode,LED,D101,LED,LED_D5.0mm,1,https://www.lumex.com/content/files/ProductAttachment/SSL-LX5093SID.pdf,67-2288-ND
+7,"Resettable fuse, polymeric positive temperature coefficient, small symbol",Polyfuse_Small,F101 F103,Polyfuse_Small,Fuse_TE5_Littlefuse-395Series,2,https://product.tdk.com/info/en/documents/data_sheet/55/db/PTC/PTC_OC_Leaded_12V_24V_C935_C995.pdf,495-3904-ND
+8,"Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x01,J101,Debug-1,Socket_Strip_Straight_1x01_Pitch2.54mm,1,,
+9,"Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x05,J103,Debug-2,Pin_Header_Straight_1x05_Pitch2.54mm,1,,
+10,"coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)",Conn_Coaxial,J102,HV,HVConnector3D,1,,
+11,"Resistor, small symbol",R_Small,R128,0,Resistor,1,,
+12,Resistor,R,R116 R118 R124,10k,Resistor,3,http://www.vishay.com/docs/28724/mrs16m25.pdf,PPC10.0KZCT-ND
+13,Resistor,R,R103 R105 R107 R109 R111 R113 R115,10k+,Resistor,7,http://www.vishay.com/docs/28767/mbsmapre.pdf,BC4515CT-ND
+14,"Resistor, small symbol",R_Small,R123,1M,Resistor,1,http://www.vishay.com/docs/28724/mrs16m25.pdf,BC3959CT-ND
+15,Resistor,R,R101 R102 R104 R106 R108 R110 R112 R114 R117,20k,Resistor,9,http://www.vishay.com/docs/28767/mbsmapre.pdf,BC4511CT-ND
+16,"Resistor, small symbol",R_Small,R119,470,Resistor,1,http://www.vishay.com/docs/28724/mrs16m25.pdf,BC4173CT-ND
+17,"Resistor, small symbol",R_Small,R120 R121 R125,4k7,Resistor,3,http://www.vishay.com/docs/28724/mrs16m25.pdf,BC4176CT-ND
+18,Resistor,R,R122,8k2,Resistor,1,http://www.vishay.com/docs/28724/mrs16m25.pdf,BC4264CT-ND
+19,quad 2-input NAND gate,7400,U104 U105,74HCT00,DIP-14,2,http://www.ti.com/lit/gpn/sn74ls00,296-2081-5-ND
+20,Decoder 3 to 8 active low outputs,74LS138,U108,74HCT138,DIP-16_W7.62mm,1,http://www.ti.com/lit/ds/symlink/cd74hc138.pdf,296-2091-5-ND
+21,Hex inverter schmitt trigger,74HC14,U102,74HCT14,DIP-14,1,http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf,296-2093-5-ND
+22,"Dual D Flip-flop, Set & Reset",74HC74,U103,74HCT74,DIP-14,1,http://www.ti.com/lit/ds/symlink/cd74hc74.pdf,296-2132-5-ND
+23,"8-bit Register, 3-state outputs",74LS374,U106,74LS374,DIP-20_W7.62mm,1,http://www.ti.com/lit/ds/symlink/cd74hct374.pdf,296-2115-5-ND
+24,,AD584,U101,AD584,DIP-8,1,https://www.analog.com/media/en/technical-documentation/data-sheets/AD584.pdf,AD584KNZ-ND
+25,,CHV,U107,CHV,CHV-rev2,1,,
+
+
+
+
+
+Component Groups:,25
+Component Count:,51
+Fitted Components:,51
+Number of PCBs:,1
+Total components:,51
+Schematic Version:,
+Schematic Date:,
+BoM Date:,Wed 09 Jan 2019 12:07:31 AM EST
+Schematic Source:,/home/moritz/Sync/gdrive_princeton/workprojects/vintageibx/appleIIdev/ibxII-hardware/hvboard/hvboard.sch
+KiCad Version:,Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1

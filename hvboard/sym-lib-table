@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ibx)(type Legacy)(uri ${KIPRJMOD}/../ibx.lib)(options "")(descr ""))
+  (lib (name Apple2_bus)(type Legacy)(uri ${KIPRJMOD}/../Apple2_bus/Apple2_bus.lib)(options "")(descr ""))
+)
