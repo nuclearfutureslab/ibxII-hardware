@@ -1,0 +1,2754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/moritz/Sync/gdrive_princeton/workprojects/vintageibx/appleIIdev/ibxII-hardware/adcboard/adcboard.sch</source>
+    <date>Tue 08 Jan 2019 11:19:12 PM EST</date>
+    <tool>Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>IBX ][ - Gamma Spectroscopy Peripheral Card</title>
+        <company>Princeton University</company>
+        <rev>1</rev>
+        <date>2017-11-28</date>
+        <source>adcboard.sch</source>
+        <comment number="1" value="Open Source Hardware"/>
+        <comment number="2" value="Development: Moritz Kütt (kuett@princeton.edu)"/>
+        <comment number="3" value="12 Bit"/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Amplifier/" tstamps="/5A35FA42/">
+      <title_block>
+        <title/>
+        <company>Princeton University</company>
+        <rev>1</rev>
+        <date/>
+        <source>Amplifier.sch</source>
+        <comment number="1" value="Open Source Hardware"/>
+        <comment number="2" value="Development: Moritz Kütt (kuett@princeton.edu)"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BUS1">
+      <value>A2_BUS</value>
+      <footprint>ibxlib:BUS_ADC</footprint>
+      <libsource lib="Apple2_bus" part="A2_BUS" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BBB1C32</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>SigADC</value>
+      <footprint>ibxlib:3-Pin-Header</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BBFC4F4</tstamp>
+    </comp>
+    <comp ref="U10">
+      <value>ADC-AD1674</value>
+      <footprint>Package_DIP:DIP-28_W15.24mm_Socket</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/AD1674.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">AD1674JNZ-ND</field>
+      </fields>
+      <libsource lib="ibx" part="ADC-AD1674" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BC67F67</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>AD826</value>
+      <footprint>ibxlib:DIP-8</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">AD826ANZ-ND</field>
+      </fields>
+      <libsource lib="Device" part="Opamp_Dual_Generic" description="Dual operational amplifier"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BC6AE41</tstamp>
+    </comp>
+    <comp ref="F2">
+      <value>HC:120mA</value>
+      <footprint>Fuse:Fuse_Littelfuse_395Series</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/data_sheet/55/db/PTC/PTC_OC_Leaded_12V_24V_C935_C995.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">495-3907-ND</field>
+      </fields>
+      <libsource lib="Device" part="Polyfuse_Small" description="Resettable fuse, polymeric positive temperature coefficient, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BCB8EEE</tstamp>
+    </comp>
+    <comp ref="F3">
+      <value>HC:250mA</value>
+      <footprint>Fuse:Fuse_Littelfuse_395Series</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/data_sheet/55/db/PTC/PTC_OC_Leaded_12V_24V_C935_C995.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">495-3904-ND</field>
+      </fields>
+      <libsource lib="Device" part="Polyfuse_Small" description="Resettable fuse, polymeric positive temperature coefficient, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BCB9BCE</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>74HCT138</value>
+      <footprint>Package_DIP:DIP-16_W7.62mm_Socket</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/cd74hc138.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">296-2091-5-ND</field>
+      </fields>
+      <libsource lib="74xx" part="74LS138" description="Decoder 3 to 8 active low outputs"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BCBA777</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>DG418</value>
+      <footprint>ibxlib:DIP-8</footprint>
+      <datasheet>http://www.vishay.com/docs/70051/dg417.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">DG418DJ-E3-ND</field>
+      </fields>
+      <libsource lib="Analog_Switch" part="DG418xJ" description="Single SPST Monolithic CMOS Analog Switch, normally OFF, 20Ohm Ron, DIP-8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BEACAC5</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>470pF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18C0G1H471JNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173197-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C0C903D</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>SD103A</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>http://www.vishay.com/docs/85754/sd103a.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">SD103AVSCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky_Small" description="Schottky diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C17A0BA</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>10pF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18C0G1H100DNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173169-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C22C051</tstamp>
+    </comp>
+    <comp ref="TP4">
+      <value>ADC_VRef</value>
+      <footprint>ibxlib:TP</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DigiKey">36-5001-ND</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C2520DA</tstamp>
+    </comp>
+    <comp ref="U11">
+      <value>74HCT244</value>
+      <footprint>Package_DIP:DIP-20_W7.62mm_Socket</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/cd74hc240.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">296-2104-5-ND</field>
+      </fields>
+      <libsource lib="74xx" part="74HC244" description="8-bit Buffer/Line Driver 3-state"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3D8FD6</tstamp>
+    </comp>
+    <comp ref="TP11">
+      <value>ADC_STS</value>
+      <footprint>ibxlib:TP</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DigiKey">36-5001-ND</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4ADCF7</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>SigOut</value>
+      <footprint>ibxlib:3-Pin-Header</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5183A1</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>74HCT00</value>
+      <footprint>ibxlib:DIP-14</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/cd74hc74.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">296-2081-5-ND</field>
+      </fields>
+      <libsource lib="74xx" part="7400" description="quad 2-input NAND gate"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C51A0B8</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>74HCT00</value>
+      <footprint>ibxlib:DIP-14</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/cd74hc74.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">296-2081-5-ND</field>
+      </fields>
+      <libsource lib="74xx" part="7400" description="quad 2-input NAND gate"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C51D4E4</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>74HCT04</value>
+      <footprint>ibxlib:DIP-14</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/cd74hc04.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">296-2083-5-ND</field>
+      </fields>
+      <libsource lib="74xx" part="74HC04" description="hex inverter"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C542FBB</tstamp>
+    </comp>
+    <comp ref="TP6">
+      <value>DebA0</value>
+      <footprint>ibxlib:TP</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DigiKey">36-5001-ND</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5435EA</tstamp>
+    </comp>
+    <comp ref="TP7">
+      <value>DebCE</value>
+      <footprint>ibxlib:TP</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5ADBB9</tstamp>
+    </comp>
+    <comp ref="TP8">
+      <value>~DebCS</value>
+      <footprint>ibxlib:TP</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DigiKey">36-5001-ND</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5AE3F3</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>74HCT04</value>
+      <footprint>ibxlib:DIP-14</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/cd74hc04.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">296-2083-5-ND</field>
+      </fields>
+      <libsource lib="74xx" part="74HC04" description="hex inverter"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C6EEF8E</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED_Small</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <datasheet>https://www.lumex.com/content/files/ProductAttachment/SSL-LX5093USBD.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">67-1751-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BB94EEC</tstamp>
+    </comp>
+    <comp ref="RV1">
+      <value>50k</value>
+      <footprint>Potentiometer_THT:Potentiometer_Bourns_3006P_Horizontal</footprint>
+      <datasheet>https://www.bourns.com/docs/Product-Datasheets/3006.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">3006P-503LF-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_POT" description="Potentiometer"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BB9670D</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>TrigLvl</value>
+      <footprint>ibxlib:3-Pin-Header</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BC021FA</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>74HCT74</value>
+      <footprint>ibxlib:DIP-14</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/cd74hc74.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">296-2132-5-ND</field>
+      </fields>
+      <libsource lib="74xx" part="74HC74" description="Dual D Flip-flop, Set &amp; Reset"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BC6C9FB</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>330pF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18C0G1H331JNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173190-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BC95E8F</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>~DebReset</value>
+      <footprint>ibxlib:TP</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DigiKey">36-5001-ND</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BCFCE92</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>~DebArmed</value>
+      <footprint>ibxlib:TP</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DigiKey">36-5001-ND</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD1E84B</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Detector</value>
+      <footprint>ibxlib:BNC_Socket_TYCO-AMP_LargePads</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1634612&amp;DocType=Customer+Drawing&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="DigiKey">A97555-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD82A0E</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>~DebTrig</value>
+      <footprint>ibxlib:TP</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DigiKey">36-5001-ND</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE08937</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>AD790</value>
+      <footprint>ibxlib:DIP-8</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/AD790.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">AD790JNZ-ND</field>
+      </fields>
+      <libsource lib="ibx" part="AD790" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE4C142</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>100nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173265-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C1633CF</tstamp>
+    </comp>
+    <comp ref="TP5">
+      <value>DebConv</value>
+      <footprint>ibxlib:TP</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DigiKey">36-5001-ND</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C37EEB2</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>D_Zener_Small</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>http://www.vishay.com/docs/85604/bzx55-se.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BZX55B10-TRGICT-ND</field>
+      </fields>
+      <libsource lib="Device" part="D_Zener_Small" description="Zener diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C839B8D</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>10nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H103KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173172-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5E38B7</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>10nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H103KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173172-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5E3BC7</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>10pF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18C0G1H100DNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173169-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5E4DC0</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>100nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173265-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C629DFD</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>100nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173265-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C66F658</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>100nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173265-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C66F944</tstamp>
+    </comp>
+    <comp ref="C24">
+      <value>100nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173265-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C66FD6D</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>100nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173265-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C670309</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>100nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173265-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C692A1B</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>10µF</value>
+      <footprint>ibxlib:FG16</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG16X5R1H106KRT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173153-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C6FADC7</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>10nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H103KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173172-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C6FAEFD</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>10µF</value>
+      <footprint>ibxlib:FG16</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG16X5R1H106KRT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173153-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C7EAB3C</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>10µF</value>
+      <footprint>ibxlib:FG16</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG16X5R1H106KRT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173153-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C852BA1</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>10nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H103KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173172-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C8758E8</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>100nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173265-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C8BBACC</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>100nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173265-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C8DF1B4</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>2.2nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18C0G1H222JNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173184-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C926FBF</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>3.3µF</value>
+      <footprint>ibxlib:FG14</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG14X5R1H335KRT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173130-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C9EEC80</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>3.3µF</value>
+      <footprint>ibxlib:FG14</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG14X5R1H335KRT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173130-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C9EF57F</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>47k</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4178CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CA17AA7</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>4k7</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4176CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CA6EC20</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>4k7</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4176CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CAFC570</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>4k7</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4176CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CB20724</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>4k7</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4176CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CB67C0F</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>6k8</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4239CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CBF676D</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>6k8</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4239CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC1A0DD</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>1k</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">PPC1.00KZCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC1AAB2</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>4k7</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4176CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC61C99</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>100</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC3952CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC852AA</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>510</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4190CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC8545C</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>330</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4123CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC855E0</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>200</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4039CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC85790</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>49.9</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4639CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC85D5F</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>100</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC3952CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CCCD7C8</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>100</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC3952CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CCCDE8D</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>49.9</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4639CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CD15494</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">PPC10.0KZCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CD1CA20</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>10k</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">PPC10.0KZCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CD3FECD</tstamp>
+    </comp>
+    <comp ref="F1">
+      <value>HC:250mA</value>
+      <footprint>Fuse:Fuse_Littelfuse_395Series</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/data_sheet/55/db/PTC/PTC_OC_Leaded_12V_24V_C935_C995.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">495-3904-ND</field>
+      </fields>
+      <libsource lib="Device" part="Polyfuse_Small" description="Resettable fuse, polymeric positive temperature coefficient, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CD88E98</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>SD103A</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>http://www.vishay.com/docs/85754/sd103a.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">SD103AVSCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky_Small" description="Schottky diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CDB8F76</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>SD103A</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>http://www.vishay.com/docs/85754/sd103a.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">SD103AVSCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky_Small" description="Schottky diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CE447EF</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>100nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173265-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CE46C87</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173265-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CE8D161</tstamp>
+    </comp>
+    <comp ref="TP9">
+      <value>DebGND</value>
+      <footprint>ibxlib:TP</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DigiKey">36-5001-ND</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C59BD9D</tstamp>
+    </comp>
+    <comp ref="TP10">
+      <value>DebGND</value>
+      <footprint>ibxlib:TP</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DigiKey">36-5001-ND</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C59C23D</tstamp>
+    </comp>
+    <comp ref="U13">
+      <value>AD744</value>
+      <footprint>ibxlib:DIP-8</footprint>
+      <datasheet>http://www.analog.com/media/en/technical-documentation/data-sheets/OP179_279.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">AD744KNZ-ND</field>
+      </fields>
+      <libsource lib="Amplifier_Operational" part="OP179GS" description="Single Rail-to-Rail High Output Current Operational Amplifiers, SOIC-8"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C3FC503</tstamp>
+    </comp>
+    <comp ref="C33">
+      <value>47pF</value>
+      <footprint>ibxlib:FG28</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG28C0G1H470JNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173499-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C416611</tstamp>
+    </comp>
+    <comp ref="U14">
+      <value>LM6172</value>
+      <footprint>ibxlib:DIP-8</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm6172.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">LM6172IN/NOPB-ND</field>
+      </fields>
+      <libsource lib="Amplifier_Operational" part="LM6172" description="Dual High Speed, Low Power, Low Distortion, Voltage Feedback Amplifiers, DIP-8/SOIC-8"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C452F0E</tstamp>
+    </comp>
+    <comp ref="U12">
+      <value>LM6172</value>
+      <footprint>ibxlib:DIP-8</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm6172.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">LM6172IN/NOPB-ND</field>
+      </fields>
+      <libsource lib="Amplifier_Operational" part="LM6172" description="Dual High Speed, Low Power, Low Distortion, Voltage Feedback Amplifiers, DIP-8/SOIC-8"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C4554D4</tstamp>
+    </comp>
+    <comp ref="U15">
+      <value>AD826</value>
+      <footprint>ibxlib:DIP-8</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">AD826ANZ-ND</field>
+      </fields>
+      <libsource lib="Amplifier_Operational" part="LM6172" description="Dual High Speed, Low Power, Low Distortion, Voltage Feedback Amplifiers, DIP-8/SOIC-8"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C456E6A</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>150k</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">PPC150KZCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C4748BE</tstamp>
+    </comp>
+    <comp ref="C37">
+      <value>470pF</value>
+      <footprint>ibxlib:FG28</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG28C0G1H471JNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173500-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C474C13</tstamp>
+    </comp>
+    <comp ref="RV2">
+      <value>100k</value>
+      <footprint>Potentiometer_THT:Potentiometer_Bourns_3006P_Horizontal</footprint>
+      <datasheet>https://www.bourns.com/docs/Product-Datasheets/3006.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">3006P-104LF-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_POT" description="Potentiometer"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C47EC06</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>SigF3</value>
+      <footprint>ibxlib:3-Pin-Header</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C4886EF</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>SigF2</value>
+      <footprint>ibxlib:3-Pin-Header</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C4A22AD</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>SigF1</value>
+      <footprint>ibxlib:3-Pin-Header</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C4A25F4</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>SigP</value>
+      <footprint>ibxlib:3-Pin-Header</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C4A2A55</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>SigDiff</value>
+      <footprint>ibxlib:3-Pin-Header</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C4A309E</tstamp>
+    </comp>
+    <comp ref="J10">
+      <value>SigInv</value>
+      <footprint>ibxlib:3-Pin-Header</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C4A3420</tstamp>
+    </comp>
+    <comp ref="C31">
+      <value>1µF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X5R1H105KRT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173257-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C953C71</tstamp>
+    </comp>
+    <comp ref="C34">
+      <value>100nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173265-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C988187</tstamp>
+    </comp>
+    <comp ref="C35">
+      <value>100nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173265-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C99A2A4</tstamp>
+    </comp>
+    <comp ref="C32">
+      <value>1µF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X5R1H105KRT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173257-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C99B05F</tstamp>
+    </comp>
+    <comp ref="C41">
+      <value>10nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H103KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173172-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C99B8D0</tstamp>
+    </comp>
+    <comp ref="C40">
+      <value>10nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H103KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173172-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C99BA7B</tstamp>
+    </comp>
+    <comp ref="C38">
+      <value>2.2µF</value>
+      <footprint>ibxlib:FG14</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG14X7R1H225KRT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173138-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C99C054</tstamp>
+    </comp>
+    <comp ref="C39">
+      <value>2.2µF</value>
+      <footprint>ibxlib:FG14</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG14X7R1H225KRT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173138-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C99C3E7</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>2.2µF</value>
+      <footprint>ibxlib:FG14</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG14X7R1H225KRT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173138-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C99CA2B</tstamp>
+    </comp>
+    <comp ref="C29">
+      <value>10nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H103KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173172-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C99CBFF</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>2.2µF</value>
+      <footprint>ibxlib:FG14</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG14X7R1H225KRT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173138-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C99D2CE</tstamp>
+    </comp>
+    <comp ref="C30">
+      <value>10nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H103KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173172-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C99D724</tstamp>
+    </comp>
+    <comp ref="C43">
+      <value>3.3µF</value>
+      <footprint>ibxlib:FG14</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG14X5R1H335KRT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173130-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C99DBDE</tstamp>
+    </comp>
+    <comp ref="C46">
+      <value>10nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H103KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173172-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C9A6DA8</tstamp>
+    </comp>
+    <comp ref="C45">
+      <value>10nF</value>
+      <footprint>ibxlib:FG18</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H103KNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173172-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C9A725F</tstamp>
+    </comp>
+    <comp ref="C44">
+      <value>3.3µF</value>
+      <footprint>ibxlib:FG14</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG14X5R1H335KRT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173130-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C9A78B7</tstamp>
+    </comp>
+    <comp ref="C26">
+      <value>470pF</value>
+      <footprint>ibxlib:FG28</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG28C0G1H471JNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173500-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C9B78CC</tstamp>
+    </comp>
+    <comp ref="C36">
+      <value>470pF</value>
+      <footprint>ibxlib:FG28</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG28C0G1H471JNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173500-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C9BF331</tstamp>
+    </comp>
+    <comp ref="C42">
+      <value>470pF</value>
+      <footprint>ibxlib:FG28</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/FG28C0G1H471JNT06.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">445-173500-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5C9BF713</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>8k2</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4264CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5CA1532D</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>8k2</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4264CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5CA1594E</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>8k2</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4264CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5CA15AAE</tstamp>
+    </comp>
+    <comp ref="R29">
+      <value>8k2</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4264CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5CA15BB4</tstamp>
+    </comp>
+    <comp ref="R30">
+      <value>47k</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4178CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5CA167D8</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>20k</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">PPC20.0KZCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5CA16912</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>15k</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4005CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5CA16A9A</tstamp>
+    </comp>
+    <comp ref="R33">
+      <value>4k7</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4176CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5CA16B6A</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>20k</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">PPC20.0KZCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5CA65CEE</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>20k</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">PPC20.0KZCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5CA660D0</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>15k</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4005CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5CA6D5F5</tstamp>
+    </comp>
+    <comp ref="R32">
+      <value>15k</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BC4005CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5CA6DABA</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>10k</value>
+      <footprint>ibxlib:Resistor</footprint>
+      <datasheet>http://www.vishay.com/docs/28724/mrs16m25.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">PPC10.0KZCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Amplifier/" tstamps="/5A35FA42/"/>
+      <tstamp>5CA166B2</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="74xx" part="74HC244">
+      <aliases>
+        <alias>74HCT244</alias>
+      </aliases>
+      <description>8-bit Buffer/Line Driver 3-state</description>
+      <docs>http://www.nxp.com/documents/data_sheet/74HC_HCT244.pdf</docs>
+      <footprints>
+        <fp>TSSOP*4.4x6.5mm*P0.65mm*</fp>
+        <fp>SSOP*4.4x6.5mm*P0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74HC244</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1OE" type="input"/>
+        <pin num="2" name="1A0" type="input"/>
+        <pin num="3" name="2Y0" type="output"/>
+        <pin num="4" name="1A1" type="input"/>
+        <pin num="5" name="2Y1" type="output"/>
+        <pin num="6" name="1A2" type="input"/>
+        <pin num="7" name="2Y2" type="output"/>
+        <pin num="8" name="1A3" type="input"/>
+        <pin num="9" name="2Y3" type="output"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="2A3" type="input"/>
+        <pin num="12" name="1Y3" type="output"/>
+        <pin num="13" name="2A2" type="input"/>
+        <pin num="14" name="1Y2" type="output"/>
+        <pin num="15" name="2A1" type="input"/>
+        <pin num="16" name="1Y1" type="output"/>
+        <pin num="17" name="2A0" type="input"/>
+        <pin num="18" name="1Y0" type="output"/>
+        <pin num="19" name="2OE" type="input"/>
+        <pin num="20" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="74xx" part="74HCT04">
+      <aliases>
+        <alias>74HC14</alias>
+        <alias>74HC04</alias>
+        <alias>74LS14</alias>
+      </aliases>
+      <description>hex inverter</description>
+      <docs>http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf</docs>
+      <footprints>
+        <fp>DIP?14*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74HCT04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="output"/>
+        <pin num="3" name="~" type="input"/>
+        <pin num="4" name="~" type="output"/>
+        <pin num="5" name="~" type="input"/>
+        <pin num="6" name="~" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="~" type="output"/>
+        <pin num="9" name="~" type="input"/>
+        <pin num="10" name="~" type="output"/>
+        <pin num="11" name="~" type="input"/>
+        <pin num="12" name="~" type="output"/>
+        <pin num="13" name="~" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="74xx" part="74LS00">
+      <aliases>
+        <alias>74LS37</alias>
+        <alias>7400</alias>
+        <alias>74HCT00</alias>
+        <alias>74HC00</alias>
+      </aliases>
+      <description>quad 2-input NAND gate</description>
+      <docs>http://www.ti.com/lit/gpn/sn74ls00</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SO14*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS00</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="~" type="output"/>
+        <pin num="4" name="~" type="input"/>
+        <pin num="5" name="~" type="input"/>
+        <pin num="6" name="~" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="~" type="output"/>
+        <pin num="9" name="~" type="input"/>
+        <pin num="10" name="~" type="input"/>
+        <pin num="11" name="~" type="output"/>
+        <pin num="12" name="~" type="input"/>
+        <pin num="13" name="~" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="74xx" part="74LS138">
+      <description>Decoder 3 to 8 active low outputs</description>
+      <docs>http://www.ti.com/lit/gpn/sn74LS138</docs>
+      <footprints>
+        <fp>DIP?16*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS138</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="A1" type="input"/>
+        <pin num="3" name="A2" type="input"/>
+        <pin num="4" name="E1" type="input"/>
+        <pin num="5" name="E2" type="input"/>
+        <pin num="6" name="E3" type="input"/>
+        <pin num="7" name="O7" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="O6" type="output"/>
+        <pin num="10" name="O5" type="output"/>
+        <pin num="11" name="O4" type="output"/>
+        <pin num="12" name="O3" type="output"/>
+        <pin num="13" name="O2" type="output"/>
+        <pin num="14" name="O1" type="output"/>
+        <pin num="15" name="O0" type="output"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="74xx" part="74LS74">
+      <aliases>
+        <alias>74HC74</alias>
+      </aliases>
+      <description>Dual D Flip-flop, Set &amp; Reset</description>
+      <docs>74xx/74hc_hct74.pdf</docs>
+      <footprints>
+        <fp>DIP?14*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS74</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~R" type="input"/>
+        <pin num="2" name="D" type="input"/>
+        <pin num="3" name="C" type="input"/>
+        <pin num="4" name="~S" type="input"/>
+        <pin num="5" name="Q" type="output"/>
+        <pin num="6" name="~Q" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="~Q" type="output"/>
+        <pin num="9" name="Q" type="output"/>
+        <pin num="10" name="~S" type="input"/>
+        <pin num="11" name="C" type="input"/>
+        <pin num="12" name="D" type="input"/>
+        <pin num="13" name="~R" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Amplifier_Operational" part="LM2904">
+      <aliases>
+        <alias>LM358</alias>
+        <alias>AD8620</alias>
+        <alias>LMC6062</alias>
+        <alias>LMC6082</alias>
+        <alias>TL062</alias>
+        <alias>TL072</alias>
+        <alias>TL082</alias>
+        <alias>NE5532</alias>
+        <alias>SA5532</alias>
+        <alias>RC4558</alias>
+        <alias>RC4560</alias>
+        <alias>RC4580</alias>
+        <alias>LMV358</alias>
+        <alias>TS912</alias>
+        <alias>TSV912IDT</alias>
+        <alias>TSV912IST</alias>
+        <alias>TLC272</alias>
+        <alias>TLC277</alias>
+        <alias>MCP602</alias>
+        <alias>OPA2134</alias>
+        <alias>OPA2340</alias>
+        <alias>OPA2376xxD</alias>
+        <alias>OPA2376xxDGK</alias>
+        <alias>MC33078</alias>
+        <alias>MC33178</alias>
+        <alias>LM4562</alias>
+        <alias>OP249</alias>
+        <alias>OP275</alias>
+        <alias>ADA4075-2</alias>
+        <alias>MCP6002-xP</alias>
+        <alias>MCP6002-xSN</alias>
+        <alias>MCP6002-xMS</alias>
+        <alias>LM7332</alias>
+        <alias>OPA2333xxD</alias>
+        <alias>OPA2333xxDGK</alias>
+        <alias>LMC6482</alias>
+        <alias>LT1492</alias>
+        <alias>LTC6081xMS8</alias>
+        <alias>LM6172</alias>
+        <alias>MCP6L92</alias>
+        <alias>NJM2043</alias>
+        <alias>NJM2114</alias>
+        <alias>NJM4556A</alias>
+        <alias>NJM4558</alias>
+        <alias>NJM4559</alias>
+        <alias>NJM4560</alias>
+        <alias>NJM4580</alias>
+        <alias>NJM5532</alias>
+        <alias>ADA4807-2ARM</alias>
+        <alias>OPA2691</alias>
+        <alias>LT6233</alias>
+        <alias>OPA2356xxD</alias>
+        <alias>OPA2356xxDGK</alias>
+        <alias>OPA1612AxD</alias>
+        <alias>MC33172</alias>
+        <alias>OPA1602</alias>
+      </aliases>
+      <description>Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm358.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>TO*99*</fp>
+        <fp>OnSemi*Micro8*</fp>
+        <fp>TSSOP*3x3mm*P0.65mm*</fp>
+        <fp>TSSOP*4.4x3mm*P0.65mm*</fp>
+        <fp>MSOP*3x3mm*P0.65mm*</fp>
+        <fp>SSOP*3.9x4.9mm*P0.635mm*</fp>
+        <fp>LFCSP*2x2mm*P0.5mm*</fp>
+        <fp>*SIP*</fp>
+        <fp>SOIC*5.3x6.2mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2904</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="~" type="output"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Amplifier_Operational" part="OP179GS">
+      <description>Single Rail-to-Rail High Output Current Operational Amplifiers, SOIC-8</description>
+      <docs>http://www.analog.com/media/en/technical-documentation/data-sheets/OP179_279.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">OP179GS</field>
+        <field name="Footprint">Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="NotConnected"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="NC" type="NotConnected"/>
+        <pin num="6" name="~" type="output"/>
+        <pin num="7" name="V+" type="power_in"/>
+        <pin num="8" name="NC" type="NotConnected"/>
+      </pins>
+    </libpart>
+    <libpart lib="Analog_Switch" part="DG418xJ">
+      <aliases>
+        <alias>MAX318xPA</alias>
+        <alias>ADG417BN</alias>
+      </aliases>
+      <description>Single SPST Monolithic CMOS Analog Switch, normally OFF, 20Ohm Ron, DIP-8</description>
+      <docs>https://datasheets.maximintegrated.com/en/ds/DG417-DG419.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DG418xJ</field>
+        <field name="Footprint">Package_DIP:DIP-8_W7.62mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="NC" type="NotConnected"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="V+" type="power_in"/>
+        <pin num="5" name="VL" type="power_in"/>
+        <pin num="6" name="~" type="input"/>
+        <pin num="7" name="V-" type="power_in"/>
+        <pin num="8" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Apple2_bus" part="A2_BUS">
+      <fields>
+        <field name="Reference">BUS</field>
+        <field name="Value">A2_BUS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~I/O_SEL" type="output"/>
+        <pin num="2" name="A0" type="BiDi"/>
+        <pin num="3" name="A1" type="BiDi"/>
+        <pin num="4" name="A2" type="BiDi"/>
+        <pin num="5" name="A3" type="BiDi"/>
+        <pin num="6" name="A4" type="BiDi"/>
+        <pin num="7" name="A5" type="BiDi"/>
+        <pin num="8" name="A6" type="BiDi"/>
+        <pin num="9" name="A7" type="BiDi"/>
+        <pin num="10" name="A8" type="BiDi"/>
+        <pin num="11" name="A9" type="BiDi"/>
+        <pin num="12" name="A10" type="BiDi"/>
+        <pin num="13" name="A11" type="BiDi"/>
+        <pin num="14" name="A12" type="BiDi"/>
+        <pin num="15" name="A13" type="BiDi"/>
+        <pin num="16" name="A14" type="BiDi"/>
+        <pin num="17" name="A15" type="output"/>
+        <pin num="18" name="R/~W" type="output"/>
+        <pin num="19" name="n.c." type="NotConnected"/>
+        <pin num="20" name="~STROBE" type="output"/>
+        <pin num="21" name="RDY" type="unspc"/>
+        <pin num="22" name="~DMA" type="unspc"/>
+        <pin num="23" name="INT_OUT" type="output"/>
+        <pin num="24" name="DMA_OUT" type="output"/>
+        <pin num="25" name="+5V" type="power_out"/>
+        <pin num="26" name="GND" type="power_out"/>
+        <pin num="27" name="DMA_IN" type="input"/>
+        <pin num="28" name="INT_IN" type="input"/>
+        <pin num="29" name="~NMI" type="output"/>
+        <pin num="30" name="~IRQ" type="output"/>
+        <pin num="31" name="~RES" type="input"/>
+        <pin num="32" name="~INH" type="BiDi"/>
+        <pin num="33" name="-12V" type="power_in"/>
+        <pin num="34" name="-5V" type="power_in"/>
+        <pin num="35" name="n.c." type="NotConnected"/>
+        <pin num="36" name="7M" type="output"/>
+        <pin num="37" name="Q3" type="input"/>
+        <pin num="38" name="ø1" type="input"/>
+        <pin num="39" name="~M2SEL" type="BiDi"/>
+        <pin num="40" name="ø0" type="output"/>
+        <pin num="41" name="~DEVSEL" type="output"/>
+        <pin num="42" name="D7" type="BiDi"/>
+        <pin num="43" name="D6" type="BiDi"/>
+        <pin num="44" name="D5" type="BiDi"/>
+        <pin num="45" name="D4" type="BiDi"/>
+        <pin num="46" name="D3" type="BiDi"/>
+        <pin num="47" name="D2" type="BiDi"/>
+        <pin num="48" name="D1" type="BiDi"/>
+        <pin num="49" name="D0" type="BiDi"/>
+        <pin num="50" name="+12V" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_Coaxial">
+      <description>coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>*BNC*</fp>
+        <fp>*SMA*</fp>
+        <fp>*SMB*</fp>
+        <fp>*SMC*</fp>
+        <fp>*Cinch*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_Coaxial</field>
+      </fields>
+      <pins>
+        <pin num="1" name="In" type="passive"/>
+        <pin num="2" name="Ext" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x03">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky_Small">
+      <description>Schottky diode, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Zener_Small">
+      <description>Zener diode, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED_Small">
+      <description>Light emitting diode, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Opamp_Dual_Generic">
+      <description>Dual operational amplifier</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>MSOP*3x3mm*P0.65mm*</fp>
+        <fp>SSOP*2.95x2.8mm*P0.65mm*</fp>
+        <fp>TSSOP*3x3mm*P0.65mm*</fp>
+        <fp>VSSOP*P0.5mm*</fp>
+        <fp>TO?99*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Opamp_Dual_Generic</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="~" type="output"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Polyfuse_Small">
+      <description>Resettable fuse, polymeric positive temperature coefficient, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*polyfuse*</fp>
+        <fp>*PTC*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Polyfuse_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_POT">
+      <description>Potentiometer</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">R_POT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ibx" part="AD790">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AD790</field>
+      </fields>
+      <pins>
+        <pin num="1" name="V+" type="power_in"/>
+        <pin num="2" name="+" type="input"/>
+        <pin num="3" name="-" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="~LATCH" type="input"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="Q" type="output"/>
+        <pin num="8" name="VLogic" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="ibx" part="ADC-AD1674">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ADC-AD1674</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vcc(logic)" type="power_in"/>
+        <pin num="2" name="12/~8" type="input"/>
+        <pin num="3" name="~CS" type="input"/>
+        <pin num="4" name="A0" type="input"/>
+        <pin num="5" name="R/~C" type="input"/>
+        <pin num="6" name="CE" type="input"/>
+        <pin num="7" name="V+" type="power_in"/>
+        <pin num="8" name="REF_Out" type="power_in"/>
+        <pin num="9" name="AGND" type="power_in"/>
+        <pin num="10" name="REF_IN" type="power_in"/>
+        <pin num="11" name="V-" type="power_in"/>
+        <pin num="12" name="BIP_off" type="power_in"/>
+        <pin num="13" name="10Vin" type="power_in"/>
+        <pin num="14" name="20Vin" type="power_in"/>
+        <pin num="15" name="DGND" type="power_in"/>
+        <pin num="16" name="DB0" type="3state"/>
+        <pin num="17" name="DB1" type="3state"/>
+        <pin num="18" name="DB2" type="3state"/>
+        <pin num="19" name="DB3" type="3state"/>
+        <pin num="20" name="DB4" type="3state"/>
+        <pin num="21" name="DB5" type="3state"/>
+        <pin num="22" name="DB6" type="3state"/>
+        <pin num="23" name="DB7" type="3state"/>
+        <pin num="24" name="DB8" type="3state"/>
+        <pin num="25" name="DB9" type="3state"/>
+        <pin num="26" name="DB10" type="3state"/>
+        <pin num="27" name="DB11" type="3state"/>
+        <pin num="28" name="STS" type="output"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="74xx">
+      <uri>/usr/share/kicad/library/74xx.lib</uri>
+    </library>
+    <library logical="Amplifier_Operational">
+      <uri>/usr/share/kicad/library/Amplifier_Operational.lib</uri>
+    </library>
+    <library logical="Analog_Switch">
+      <uri>/usr/share/kicad/library/Analog_Switch.lib</uri>
+    </library>
+    <library logical="Apple2_bus">
+      <uri>/home/moritz/Sync/gdrive_princeton/workprojects/vintageibx/appleIIdev/ibxII-hardware/adcboard/../Apple2_bus/Apple2_bus.lib</uri>
+    </library>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="ibx">
+      <uri>/home/moritz/Sync/gdrive_princeton/workprojects/vintageibx/appleIIdev/ibxII-hardware/adcboard/../ibx.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(U5-Pad10)">
+      <node ref="U7" pin="5"/>
+      <node ref="U5" pin="10"/>
+    </net>
+    <net code="2" name="Net-(U7-Pad10)">
+      <node ref="U9" pin="2"/>
+      <node ref="U7" pin="10"/>
+    </net>
+    <net code="3" name="R/~W">
+      <node ref="BUS1" pin="18"/>
+      <node ref="U7" pin="9"/>
+    </net>
+    <net code="4" name="GND">
+      <node ref="C21" pin="1"/>
+      <node ref="U10" pin="15"/>
+      <node ref="D5" pin="2"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="U3" pin="6"/>
+      <node ref="U4" pin="7"/>
+      <node ref="U5" pin="7"/>
+      <node ref="U9" pin="7"/>
+      <node ref="C14" pin="2"/>
+      <node ref="R19" pin="1"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="C17" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="C12" pin="1"/>
+      <node ref="C20" pin="1"/>
+      <node ref="C25" pin="1"/>
+      <node ref="C24" pin="1"/>
+      <node ref="C23" pin="1"/>
+      <node ref="C22" pin="1"/>
+      <node ref="R13" pin="1"/>
+      <node ref="R15" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="C8" pin="1"/>
+      <node ref="J2" pin="2"/>
+      <node ref="U7" pin="7"/>
+      <node ref="R8" pin="2"/>
+      <node ref="R17" pin="1"/>
+      <node ref="R16" pin="1"/>
+      <node ref="TP10" pin="1"/>
+      <node ref="TP9" pin="1"/>
+      <node ref="C5" pin="2"/>
+      <node ref="U6" pin="7"/>
+      <node ref="U14" pin="5"/>
+      <node ref="C26" pin="1"/>
+      <node ref="C36" pin="1"/>
+      <node ref="C42" pin="1"/>
+      <node ref="U14" pin="3"/>
+      <node ref="R32" pin="1"/>
+      <node ref="U13" pin="3"/>
+      <node ref="C39" pin="2"/>
+      <node ref="C32" pin="2"/>
+      <node ref="C41" pin="1"/>
+      <node ref="C40" pin="1"/>
+      <node ref="C38" pin="2"/>
+      <node ref="BUS1" pin="26"/>
+      <node ref="C27" pin="2"/>
+      <node ref="C28" pin="2"/>
+      <node ref="C30" pin="1"/>
+      <node ref="C43" pin="2"/>
+      <node ref="C46" pin="1"/>
+      <node ref="C45" pin="1"/>
+      <node ref="C29" pin="1"/>
+      <node ref="C31" pin="2"/>
+      <node ref="C34" pin="1"/>
+      <node ref="C35" pin="1"/>
+      <node ref="R23" pin="1"/>
+      <node ref="C44" pin="2"/>
+      <node ref="R27" pin="1"/>
+      <node ref="RV1" pin="3"/>
+      <node ref="U11" pin="10"/>
+      <node ref="U10" pin="9"/>
+      <node ref="U8" pin="8"/>
+      <node ref="C15" pin="1"/>
+      <node ref="U2" pin="8"/>
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="5" name="RD">
+      <node ref="U6" pin="12"/>
+      <node ref="U6" pin="9"/>
+      <node ref="U6" pin="1"/>
+      <node ref="U9" pin="12"/>
+      <node ref="U6" pin="4"/>
+    </net>
+    <net code="6" name="Net-(U7-Pad8)">
+      <node ref="U7" pin="8"/>
+      <node ref="U9" pin="13"/>
+    </net>
+    <net code="7" name="O1">
+      <node ref="U9" pin="4"/>
+      <node ref="U6" pin="2"/>
+    </net>
+    <net code="8" name="Net-(TP11-Pad1)">
+      <node ref="U10" pin="28"/>
+      <node ref="TP11" pin="1"/>
+      <node ref="U11" pin="4"/>
+    </net>
+    <net code="9" name="/Amplifier/SigOut">
+      <node ref="J1" pin="1"/>
+      <node ref="R33" pin="1"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="10" name="O2">
+      <node ref="U6" pin="5"/>
+      <node ref="U9" pin="6"/>
+    </net>
+    <net code="11" name="~BufferOE">
+      <node ref="U11" pin="19"/>
+      <node ref="U6" pin="11"/>
+      <node ref="U11" pin="1"/>
+    </net>
+    <net code="12" name="Net-(U5-Pad9)">
+      <node ref="U6" pin="6"/>
+      <node ref="U5" pin="9"/>
+      <node ref="U7" pin="1"/>
+    </net>
+    <net code="13" name="Net-(U6-Pad8)">
+      <node ref="U6" pin="8"/>
+      <node ref="U7" pin="2"/>
+    </net>
+    <net code="14" name="Net-(J3-Pad1)">
+      <node ref="RV1" pin="2"/>
+      <node ref="J3" pin="2"/>
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="15" name="Net-(C15-Pad2)">
+      <node ref="R12" pin="2"/>
+      <node ref="U4" pin="1"/>
+      <node ref="C15" pin="2"/>
+    </net>
+    <net code="16" name="Net-(R9-Pad2)">
+      <node ref="U4" pin="8"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="17" name="Net-(R10-Pad2)">
+      <node ref="U5" pin="2"/>
+      <node ref="R10" pin="2"/>
+    </net>
+    <net code="18" name="Net-(R11-Pad2)">
+      <node ref="U5" pin="4"/>
+      <node ref="R11" pin="2"/>
+    </net>
+    <net code="19" name="Net-(U8-Pad9)">
+      <node ref="U8" pin="9"/>
+    </net>
+    <net code="20" name="Net-(U8-Pad10)">
+      <node ref="U8" pin="10"/>
+    </net>
+    <net code="21" name="Net-(U8-Pad11)">
+      <node ref="U9" pin="11"/>
+      <node ref="U8" pin="11"/>
+    </net>
+    <net code="22" name="Net-(U8-Pad12)">
+      <node ref="U9" pin="9"/>
+      <node ref="U8" pin="12"/>
+    </net>
+    <net code="23" name="Net-(U8-Pad13)">
+      <node ref="U9" pin="5"/>
+      <node ref="U8" pin="13"/>
+    </net>
+    <net code="24" name="Net-(U8-Pad14)">
+      <node ref="U8" pin="14"/>
+      <node ref="U9" pin="3"/>
+    </net>
+    <net code="25" name="Net-(U8-Pad15)">
+      <node ref="U8" pin="15"/>
+    </net>
+    <net code="26" name="Net-(U8-Pad7)">
+      <node ref="U8" pin="7"/>
+    </net>
+    <net code="27" name="Net-(C10-Pad2)">
+      <node ref="C10" pin="2"/>
+      <node ref="R5" pin="1"/>
+      <node ref="J4" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="J4" pin="1"/>
+      <node ref="U1" pin="6"/>
+      <node ref="U1" pin="7"/>
+      <node ref="C7" pin="2"/>
+    </net>
+    <net code="28" name="Net-(TP8-Pad1)">
+      <node ref="U10" pin="3"/>
+      <node ref="U5" pin="6"/>
+      <node ref="TP8" pin="1"/>
+    </net>
+    <net code="29" name="Net-(TP6-Pad1)">
+      <node ref="U5" pin="8"/>
+      <node ref="TP6" pin="1"/>
+      <node ref="U10" pin="4"/>
+    </net>
+    <net code="30" name="Net-(TP7-Pad1)">
+      <node ref="U7" pin="6"/>
+      <node ref="TP7" pin="1"/>
+      <node ref="U10" pin="6"/>
+      <node ref="U5" pin="5"/>
+    </net>
+    <net code="31" name="Net-(R18-Pad2)">
+      <node ref="R18" pin="2"/>
+      <node ref="U10" pin="8"/>
+    </net>
+    <net code="32" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="D2" pin="2"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="33" name="+12V">
+      <node ref="C27" pin="1"/>
+      <node ref="C40" pin="2"/>
+      <node ref="C38" pin="1"/>
+      <node ref="C43" pin="1"/>
+      <node ref="C45" pin="2"/>
+      <node ref="C31" pin="1"/>
+      <node ref="C34" pin="2"/>
+      <node ref="U12" pin="8"/>
+      <node ref="U15" pin="8"/>
+      <node ref="C29" pin="2"/>
+      <node ref="U13" pin="7"/>
+      <node ref="U14" pin="8"/>
+      <node ref="F3" pin="2"/>
+      <node ref="C14" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U10" pin="7"/>
+      <node ref="C12" pin="2"/>
+      <node ref="U3" pin="1"/>
+      <node ref="U1" pin="8"/>
+      <node ref="C5" pin="1"/>
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="34" name="Net-(BUS1-Pad33)">
+      <node ref="BUS1" pin="33"/>
+      <node ref="F2" pin="1"/>
+    </net>
+    <net code="35" name="-12V">
+      <node ref="F2" pin="2"/>
+      <node ref="U14" pin="4"/>
+      <node ref="U12" pin="4"/>
+      <node ref="U1" pin="4"/>
+      <node ref="U13" pin="4"/>
+      <node ref="U2" pin="7"/>
+      <node ref="U10" pin="11"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C18" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C44" pin="1"/>
+      <node ref="C32" pin="1"/>
+      <node ref="C28" pin="1"/>
+      <node ref="U3" pin="4"/>
+      <node ref="C46" pin="2"/>
+      <node ref="C30" pin="2"/>
+      <node ref="C39" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="U15" pin="4"/>
+      <node ref="C41" pin="2"/>
+      <node ref="C35" pin="2"/>
+    </net>
+    <net code="36" name="~Armed">
+      <node ref="TP2" pin="1"/>
+      <node ref="D4" pin="2"/>
+      <node ref="U11" pin="2"/>
+      <node ref="U4" pin="9"/>
+      <node ref="U5" pin="1"/>
+    </net>
+    <net code="37" name="Net-(R9-Pad1)">
+      <node ref="U2" pin="6"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="38" name="Net-(U2-Pad2)">
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="39" name="Net-(R2-Pad1)">
+      <node ref="RV1" pin="1"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="40" name="Net-(R15-Pad2)">
+      <node ref="R15" pin="2"/>
+      <node ref="U8" pin="5"/>
+    </net>
+    <net code="41" name="Net-(C11-Pad2)">
+      <node ref="R10" pin="1"/>
+      <node ref="U5" pin="3"/>
+      <node ref="C11" pin="2"/>
+    </net>
+    <net code="42" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1"/>
+      <node ref="U1" pin="5"/>
+      <node ref="R6" pin="1"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="43" name="Net-(C16-Pad2)">
+      <node ref="R18" pin="1"/>
+      <node ref="TP4" pin="1"/>
+      <node ref="C16" pin="2"/>
+      <node ref="U10" pin="10"/>
+    </net>
+    <net code="44" name="Net-(BUS1-Pad34)">
+      <node ref="BUS1" pin="34"/>
+    </net>
+    <net code="45" name="Net-(R14-Pad2)">
+      <node ref="R14" pin="2"/>
+      <node ref="U8" pin="6"/>
+    </net>
+    <net code="46" name="Net-(R16-Pad2)">
+      <node ref="U11" pin="6"/>
+      <node ref="U11" pin="8"/>
+      <node ref="U11" pin="17"/>
+      <node ref="U11" pin="13"/>
+      <node ref="U11" pin="15"/>
+      <node ref="R16" pin="2"/>
+      <node ref="U11" pin="11"/>
+    </net>
+    <net code="47" name="Net-(J1-Pad3)">
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="48" name="Net-(R1-Pad2)">
+      <node ref="U3" pin="2"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="49" name="Net-(R7-Pad1)">
+      <node ref="U4" pin="11"/>
+      <node ref="TP1" pin="1"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="50" name="Net-(R4-Pad1)">
+      <node ref="U3" pin="5"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="51" name="Net-(D4-Pad1)">
+      <node ref="R8" pin="1"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="52" name="Net-(C8-Pad2)">
+      <node ref="R6" pin="2"/>
+      <node ref="C8" pin="2"/>
+    </net>
+    <net code="53" name="~DevSel">
+      <node ref="BUS1" pin="41"/>
+      <node ref="U8" pin="4"/>
+    </net>
+    <net code="54" name="Net-(R11-Pad1)">
+      <node ref="U4" pin="3"/>
+      <node ref="R11" pin="1"/>
+    </net>
+    <net code="55" name="+5V">
+      <node ref="U4" pin="4"/>
+      <node ref="U4" pin="2"/>
+      <node ref="U4" pin="10"/>
+      <node ref="U10" pin="1"/>
+      <node ref="U4" pin="12"/>
+      <node ref="U3" pin="8"/>
+      <node ref="C9" pin="2"/>
+      <node ref="U7" pin="14"/>
+      <node ref="U8" pin="16"/>
+      <node ref="U4" pin="14"/>
+      <node ref="U5" pin="14"/>
+      <node ref="U9" pin="14"/>
+      <node ref="C22" pin="2"/>
+      <node ref="U6" pin="14"/>
+      <node ref="F1" pin="1"/>
+      <node ref="R14" pin="1"/>
+      <node ref="U11" pin="20"/>
+      <node ref="C20" pin="2"/>
+      <node ref="C25" pin="2"/>
+      <node ref="C24" pin="2"/>
+      <node ref="C23" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="C13" pin="1"/>
+      <node ref="C19" pin="1"/>
+      <node ref="U2" pin="5"/>
+      <node ref="C21" pin="2"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="56" name="Net-(R13-Pad2)">
+      <node ref="U4" pin="5"/>
+      <node ref="R13" pin="2"/>
+      <node ref="TP5" pin="1"/>
+    </net>
+    <net code="57" name="Net-(J3-Pad3)">
+      <node ref="J3" pin="3"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="58" name="Net-(R7-Pad2)">
+      <node ref="U3" pin="7"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="59" name="Net-(TP3-Pad1)">
+      <node ref="TP3" pin="1"/>
+      <node ref="U4" pin="13"/>
+      <node ref="U6" pin="3"/>
+    </net>
+    <net code="60" name="Net-(C10-Pad1)">
+      <node ref="R5" pin="2"/>
+      <node ref="D2" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="61" name="Net-(D5-Pad1)">
+      <node ref="J4" pin="3"/>
+      <node ref="U10" pin="13"/>
+      <node ref="D5" pin="1"/>
+    </net>
+    <net code="62" name="A1">
+      <node ref="U8" pin="2"/>
+      <node ref="BUS1" pin="3"/>
+    </net>
+    <net code="63" name="Net-(U5-Pad11)">
+      <node ref="U5" pin="11"/>
+      <node ref="U7" pin="3"/>
+    </net>
+    <net code="64" name="Net-(C7-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C7" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="65" name="Phi1">
+      <node ref="U9" pin="1"/>
+      <node ref="BUS1" pin="38"/>
+    </net>
+    <net code="66" name="O3">
+      <node ref="U9" pin="8"/>
+      <node ref="U6" pin="10"/>
+    </net>
+    <net code="67" name="O4">
+      <node ref="U6" pin="13"/>
+      <node ref="U9" pin="10"/>
+    </net>
+    <net code="68" name="Net-(BUS1-Pad36)">
+      <node ref="BUS1" pin="36"/>
+    </net>
+    <net code="69" name="Net-(BUS1-Pad37)">
+      <node ref="BUS1" pin="37"/>
+    </net>
+    <net code="70" name="Net-(BUS1-Pad39)">
+      <node ref="BUS1" pin="39"/>
+    </net>
+    <net code="71" name="Net-(BUS1-Pad40)">
+      <node ref="BUS1" pin="40"/>
+    </net>
+    <net code="72" name="Net-(BUS1-Pad1)">
+      <node ref="BUS1" pin="1"/>
+    </net>
+    <net code="73" name="Net-(BUS1-Pad24)">
+      <node ref="BUS1" pin="24"/>
+    </net>
+    <net code="74" name="Net-(BUS1-Pad23)">
+      <node ref="BUS1" pin="23"/>
+    </net>
+    <net code="75" name="Net-(BUS1-Pad22)">
+      <node ref="BUS1" pin="22"/>
+    </net>
+    <net code="76" name="Net-(BUS1-Pad21)">
+      <node ref="BUS1" pin="21"/>
+    </net>
+    <net code="77" name="Net-(BUS1-Pad20)">
+      <node ref="BUS1" pin="20"/>
+    </net>
+    <net code="78" name="Net-(BUS1-Pad27)">
+      <node ref="BUS1" pin="27"/>
+    </net>
+    <net code="79" name="Net-(BUS1-Pad28)">
+      <node ref="BUS1" pin="28"/>
+    </net>
+    <net code="80" name="A0">
+      <node ref="U8" pin="1"/>
+      <node ref="BUS1" pin="2"/>
+    </net>
+    <net code="81" name="A2">
+      <node ref="U8" pin="3"/>
+      <node ref="BUS1" pin="4"/>
+    </net>
+    <net code="82" name="Net-(BUS1-Pad29)">
+      <node ref="BUS1" pin="29"/>
+    </net>
+    <net code="83" name="Net-(U10-Pad14)">
+      <node ref="U10" pin="14"/>
+    </net>
+    <net code="84" name="Net-(BUS1-Pad30)">
+      <node ref="BUS1" pin="30"/>
+    </net>
+    <net code="85" name="Net-(BUS1-Pad31)">
+      <node ref="BUS1" pin="31"/>
+    </net>
+    <net code="86" name="Net-(BUS1-Pad32)">
+      <node ref="BUS1" pin="32"/>
+    </net>
+    <net code="87" name="Net-(BUS1-Pad6)">
+      <node ref="BUS1" pin="6"/>
+    </net>
+    <net code="88" name="Net-(BUS1-Pad7)">
+      <node ref="BUS1" pin="7"/>
+    </net>
+    <net code="89" name="Net-(BUS1-Pad8)">
+      <node ref="BUS1" pin="8"/>
+    </net>
+    <net code="90" name="Net-(BUS1-Pad9)">
+      <node ref="BUS1" pin="9"/>
+    </net>
+    <net code="91" name="Net-(BUS1-Pad10)">
+      <node ref="BUS1" pin="10"/>
+    </net>
+    <net code="92" name="Net-(BUS1-Pad11)">
+      <node ref="BUS1" pin="11"/>
+    </net>
+    <net code="93" name="Net-(BUS1-Pad12)">
+      <node ref="BUS1" pin="12"/>
+    </net>
+    <net code="94" name="Net-(BUS1-Pad13)">
+      <node ref="BUS1" pin="13"/>
+    </net>
+    <net code="95" name="Net-(BUS1-Pad14)">
+      <node ref="BUS1" pin="14"/>
+    </net>
+    <net code="96" name="Net-(BUS1-Pad15)">
+      <node ref="BUS1" pin="15"/>
+    </net>
+    <net code="97" name="Net-(BUS1-Pad17)">
+      <node ref="BUS1" pin="17"/>
+    </net>
+    <net code="98" name="Net-(BUS1-Pad16)">
+      <node ref="BUS1" pin="16"/>
+    </net>
+    <net code="99" name="Net-(BUS1-Pad5)">
+      <node ref="BUS1" pin="5"/>
+    </net>
+    <net code="100" name="Net-(R12-Pad1)">
+      <node ref="U4" pin="6"/>
+      <node ref="R12" pin="1"/>
+      <node ref="U7" pin="4"/>
+      <node ref="U10" pin="5"/>
+    </net>
+    <net code="101" name="Net-(BUS1-Pad50)">
+      <node ref="F3" pin="1"/>
+      <node ref="BUS1" pin="50"/>
+    </net>
+    <net code="102" name="/Amplifier/SigRaw">
+      <node ref="R21" pin="2"/>
+      <node ref="U13" pin="2"/>
+      <node ref="J2" pin="1"/>
+      <node ref="C33" pin="1"/>
+    </net>
+    <net code="103" name="D0">
+      <node ref="U11" pin="18"/>
+      <node ref="U10" pin="20"/>
+      <node ref="BUS1" pin="49"/>
+    </net>
+    <net code="104" name="Net-(R19-Pad2)">
+      <node ref="R19" pin="2"/>
+      <node ref="U10" pin="12"/>
+    </net>
+    <net code="105" name="Net-(BUS1-Pad19)">
+      <node ref="BUS1" pin="19"/>
+    </net>
+    <net code="106" name="Net-(R17-Pad2)">
+      <node ref="U10" pin="2"/>
+      <node ref="R17" pin="2"/>
+    </net>
+    <net code="107" name="D7">
+      <node ref="U10" pin="27"/>
+      <node ref="U10" pin="19"/>
+      <node ref="U11" pin="9"/>
+      <node ref="BUS1" pin="42"/>
+    </net>
+    <net code="108" name="D6">
+      <node ref="BUS1" pin="43"/>
+      <node ref="U10" pin="18"/>
+      <node ref="U11" pin="7"/>
+      <node ref="U10" pin="26"/>
+    </net>
+    <net code="109" name="D5">
+      <node ref="BUS1" pin="44"/>
+      <node ref="U10" pin="17"/>
+      <node ref="U11" pin="5"/>
+      <node ref="U10" pin="25"/>
+    </net>
+    <net code="110" name="Net-(BUS1-Pad25)">
+      <node ref="BUS1" pin="25"/>
+      <node ref="F1" pin="2"/>
+    </net>
+    <net code="111" name="Net-(BUS1-Pad35)">
+      <node ref="BUS1" pin="35"/>
+    </net>
+    <net code="112" name="D4">
+      <node ref="U11" pin="3"/>
+      <node ref="BUS1" pin="45"/>
+      <node ref="U10" pin="24"/>
+      <node ref="U10" pin="16"/>
+    </net>
+    <net code="113" name="D3">
+      <node ref="U11" pin="12"/>
+      <node ref="BUS1" pin="46"/>
+      <node ref="U10" pin="23"/>
+    </net>
+    <net code="114" name="D2">
+      <node ref="U10" pin="22"/>
+      <node ref="BUS1" pin="47"/>
+      <node ref="U11" pin="14"/>
+    </net>
+    <net code="115" name="D1">
+      <node ref="U10" pin="21"/>
+      <node ref="U11" pin="16"/>
+      <node ref="BUS1" pin="48"/>
+    </net>
+    <net code="116" name="Net-(R31-Pad1)">
+      <node ref="U15" pin="2"/>
+      <node ref="R31" pin="1"/>
+      <node ref="R32" pin="2"/>
+    </net>
+    <net code="117" name="Net-(U13-Pad1)">
+      <node ref="U13" pin="1"/>
+    </net>
+    <net code="118" name="Net-(R33-Pad2)">
+      <node ref="R33" pin="2"/>
+      <node ref="U15" pin="7"/>
+      <node ref="U15" pin="6"/>
+    </net>
+    <net code="119" name="Net-(U13-Pad8)">
+      <node ref="U13" pin="8"/>
+    </net>
+    <net code="120" name="Net-(U13-Pad5)">
+      <node ref="U13" pin="5"/>
+    </net>
+    <net code="121" name="/Amplifier/SigF3b">
+      <node ref="J9" pin="3"/>
+      <node ref="U15" pin="5"/>
+    </net>
+    <net code="122" name="Net-(C37-Pad1)">
+      <node ref="R25" pin="2"/>
+      <node ref="C37" pin="1"/>
+    </net>
+    <net code="123" name="/Amplifier/SigF3">
+      <node ref="U15" pin="1"/>
+      <node ref="J9" pin="1"/>
+      <node ref="R31" pin="2"/>
+      <node ref="J9" pin="2"/>
+    </net>
+    <net code="124" name="Net-(C26-Pad2)">
+      <node ref="U12" pin="3"/>
+      <node ref="R20" pin="1"/>
+      <node ref="C26" pin="2"/>
+    </net>
+    <net code="125" name="Net-(R25-Pad1)">
+      <node ref="R28" pin="2"/>
+      <node ref="R25" pin="1"/>
+      <node ref="U14" pin="2"/>
+    </net>
+    <net code="126" name="Net-(R22-Pad1)">
+      <node ref="R22" pin="1"/>
+      <node ref="U12" pin="2"/>
+      <node ref="R23" pin="2"/>
+    </net>
+    <net code="127" name="Net-(R30-Pad1)">
+      <node ref="R30" pin="1"/>
+      <node ref="RV2" pin="3"/>
+      <node ref="U14" pin="6"/>
+      <node ref="RV2" pin="2"/>
+    </net>
+    <net code="128" name="Net-(C42-Pad2)">
+      <node ref="C42" pin="2"/>
+      <node ref="R29" pin="1"/>
+      <node ref="U15" pin="3"/>
+    </net>
+    <net code="129" name="Net-(C36-Pad2)">
+      <node ref="U12" pin="5"/>
+      <node ref="R24" pin="1"/>
+      <node ref="C36" pin="2"/>
+    </net>
+    <net code="130" name="/Amplifier/SigDiffb">
+      <node ref="R30" pin="2"/>
+      <node ref="J8" pin="3"/>
+    </net>
+    <net code="131" name="/Amplifier/SigPb">
+      <node ref="J6" pin="3"/>
+      <node ref="C37" pin="2"/>
+    </net>
+    <net code="132" name="/Amplifier/SigDiff">
+      <node ref="U14" pin="1"/>
+      <node ref="R28" pin="1"/>
+      <node ref="J8" pin="1"/>
+      <node ref="J8" pin="2"/>
+    </net>
+    <net code="133" name="/Amplifier/SigP">
+      <node ref="J6" pin="2"/>
+      <node ref="J6" pin="1"/>
+      <node ref="R21" pin="1"/>
+      <node ref="U13" pin="6"/>
+      <node ref="C33" pin="2"/>
+    </net>
+    <net code="134" name="Net-(R26-Pad1)">
+      <node ref="R26" pin="1"/>
+      <node ref="R27" pin="2"/>
+      <node ref="U12" pin="6"/>
+    </net>
+    <net code="135" name="/Amplifier/SigF2b">
+      <node ref="R29" pin="2"/>
+      <node ref="J7" pin="3"/>
+    </net>
+    <net code="136" name="/Amplifier/SigF2">
+      <node ref="J7" pin="2"/>
+      <node ref="U12" pin="7"/>
+      <node ref="R26" pin="2"/>
+      <node ref="J7" pin="1"/>
+    </net>
+    <net code="137" name="/Amplifier/SigF1b">
+      <node ref="R24" pin="2"/>
+      <node ref="J5" pin="3"/>
+    </net>
+    <net code="138" name="/Amplifier/SigF1">
+      <node ref="J5" pin="1"/>
+      <node ref="R22" pin="2"/>
+      <node ref="U12" pin="1"/>
+      <node ref="J5" pin="2"/>
+    </net>
+    <net code="139" name="/Amplifier/SigInvb">
+      <node ref="J10" pin="3"/>
+      <node ref="R20" pin="2"/>
+    </net>
+    <net code="140" name="/Amplifier/SigInv">
+      <node ref="RV2" pin="1"/>
+      <node ref="U14" pin="7"/>
+      <node ref="J10" pin="2"/>
+      <node ref="J10" pin="1"/>
+    </net>
+  </nets>
+</export>

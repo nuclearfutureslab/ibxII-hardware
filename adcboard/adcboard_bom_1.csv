@@ -1,0 +1,72 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,DigiKey
+1,,A2_BUS,BUS1,A2_BUS,BUS_ADC,1,,
+2,"Unpolarized capacitor, small symbol",C_Small,C5 C6 C9 C13 C19 C20 C21 C22 C23 C24 C25 C34 C35,100nF,FG18,13,https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf,445-173265-1-ND
+3,"Unpolarized capacitor, small symbol",C_Small,C3 C4 C14 C18 C29 C30 C40 C41 C45 C46,10nF,FG18,10,https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H103KNT06.pdf,445-173172-1-ND
+4,"Unpolarized capacitor, small symbol",C_Small,C7 C10,10pF,FG18,2,https://product.tdk.com/info/en/documents/chara_sheet/FG18C0G1H100DNT06.pdf,445-173169-1-ND
+5,"Unpolarized capacitor, small symbol",C_Small,C12 C16 C17,10µF,FG16,3,https://product.tdk.com/info/en/documents/chara_sheet/FG16X5R1H106KRT06.pdf,445-173153-1-ND
+6,"Unpolarized capacitor, small symbol",C_Small,C31 C32,1µF,FG18,2,https://product.tdk.com/info/en/documents/chara_sheet/FG18X5R1H105KRT06.pdf,445-173257-1-ND
+7,"Unpolarized capacitor, small symbol",C_Small,C11,2.2nF,FG18,1,https://product.tdk.com/info/en/documents/chara_sheet/FG18C0G1H222JNT06.pdf,445-173184-1-ND
+8,"Unpolarized capacitor, small symbol",C_Small,C27 C28 C38 C39,2.2µF,FG14,4,https://product.tdk.com/info/en/documents/chara_sheet/FG14X7R1H225KRT06.pdf,445-173138-1-ND
+9,"Unpolarized capacitor, small symbol",C_Small,C1 C2 C43 C44,3.3µF,FG14,4,https://product.tdk.com/info/en/documents/chara_sheet/FG14X5R1H335KRT06.pdf,445-173130-1-ND
+10,"Unpolarized capacitor, small symbol",C_Small,C15,330pF,FG18,1,https://product.tdk.com/info/en/documents/chara_sheet/FG18C0G1H331JNT06.pdf,445-173190-1-ND
+11,"Unpolarized capacitor, small symbol",C_Small,C26 C36 C37 C42,470pF,FG28,4,https://product.tdk.com/info/en/documents/chara_sheet/FG28C0G1H471JNT06.pdf,445-173500-1-ND
+12,"Unpolarized capacitor, small symbol",C_Small,C8,470pF,FG18,1,https://product.tdk.com/info/en/documents/chara_sheet/FG18C0G1H471JNT06.pdf,445-173197-1-ND
+13,"Unpolarized capacitor, small symbol",C_Small,C33,47pF,FG28,1,https://product.tdk.com/info/en/documents/chara_sheet/FG28C0G1H470JNT06.pdf,445-173499-1-ND
+14,"Zener diode, small symbol",D_Zener_Small,D5,D_Zener_Small,D_DO-35_SOD27_P7.62mm_Horizontal,1,http://www.vishay.com/docs/85604/bzx55-se.pdf,BZX55B10-TRGICT-ND
+15,"Light emitting diode, small symbol",LED_Small,D4,LED_Small,LED_D5.0mm,1,https://www.lumex.com/content/files/ProductAttachment/SSL-LX5093USBD.pdf,67-1751-ND
+16,"Schottky diode, small symbol",D_Schottky_Small,D1 D2 D3,SD103A,D_DO-35_SOD27_P7.62mm_Horizontal,3,http://www.vishay.com/docs/85754/sd103a.pdf,SD103AVSCT-ND
+17,"Resettable fuse, polymeric positive temperature coefficient, small symbol",Polyfuse_Small,F2,HC:120mA,Fuse_Littelfuse_395Series,1,https://product.tdk.com/info/en/documents/data_sheet/55/db/PTC/PTC_OC_Leaded_12V_24V_C935_C995.pdf,495-3907-ND
+18,"Resettable fuse, polymeric positive temperature coefficient, small symbol",Polyfuse_Small,F1 F3,HC:250mA,Fuse_Littelfuse_395Series,2,https://product.tdk.com/info/en/documents/data_sheet/55/db/PTC/PTC_OC_Leaded_12V_24V_C935_C995.pdf,495-3904-ND
+19,"coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)",Conn_Coaxial,J2,Detector,BNC_Socket_TYCO-AMP_LargePads,1,https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1634612&DocType=Customer+Drawing&DocLang=English,A97555-ND
+20,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03,J4,SigADC,3-Pin-Header,1,~,
+21,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03,J8,SigDiff,3-Pin-Header,1,~,
+22,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03,J5,SigF1,3-Pin-Header,1,~,
+23,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03,J7,SigF2,3-Pin-Header,1,~,
+24,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03,J9,SigF3,3-Pin-Header,1,~,
+25,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03,J10,SigInv,3-Pin-Header,1,~,
+26,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03,J1,SigOut,3-Pin-Header,1,~,
+27,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03,J6,SigP,3-Pin-Header,1,~,
+28,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03,J3,TrigLvl,3-Pin-Header,1,~,
+29,"Resistor, small symbol",R_Small,R7 R9 R11,100,Resistor,3,http://www.vishay.com/docs/28724/mrs16m25.pdf,BC3952CT-ND
+30,"Resistor, small symbol",R_Small,R10 R13 R28,10k,Resistor,3,http://www.vishay.com/docs/28724/mrs16m25.pdf,PPC10.0KZCT-ND
+31,"Resistor, small symbol",R_Small,R21,150k,Resistor,1,http://www.vishay.com/docs/28724/mrs16m25.pdf,PPC150KZCT-ND
+32,"Resistor, small symbol",R_Small,R23 R27 R32,15k,Resistor,3,http://www.vishay.com/docs/28724/mrs16m25.pdf,BC4005CT-ND
+33,"Resistor, small symbol",R_Small,R3,1k,Resistor,1,http://www.vishay.com/docs/28724/mrs16m25.pdf,PPC1.00KZCT-ND
+34,"Resistor, small symbol",R_Small,R6,200,Resistor,1,http://www.vishay.com/docs/28724/mrs16m25.pdf,BC4039CT-ND
+35,"Resistor, small symbol",R_Small,R22 R26 R31,20k,Resistor,3,http://www.vishay.com/docs/28724/mrs16m25.pdf,PPC20.0KZCT-ND
+36,"Resistor, small symbol",R_Small,R8,330,Resistor,1,http://www.vishay.com/docs/28724/mrs16m25.pdf,BC4123CT-ND
+37,"Resistor, small symbol",R_Small,R2 R30,47k,Resistor,2,http://www.vishay.com/docs/28724/mrs16m25.pdf,BC4178CT-ND
+38,"Resistor, small symbol",R_Small,R18 R19,49.9,Resistor,2,http://www.vishay.com/docs/28724/mrs16m25.pdf,BC4639CT-ND
+39,"Resistor, small symbol",R_Small,R12 R14 R15 R16 R17 R33,4k7,Resistor,6,http://www.vishay.com/docs/28724/mrs16m25.pdf,BC4176CT-ND
+40,"Resistor, small symbol",R_Small,R4,510,Resistor,1,http://www.vishay.com/docs/28724/mrs16m25.pdf,BC4190CT-ND
+41,"Resistor, small symbol",R_Small,R1 R5,6k8,Resistor,2,http://www.vishay.com/docs/28724/mrs16m25.pdf,BC4239CT-ND
+42,"Resistor, small symbol",R_Small,R20 R24 R25 R29,8k2,Resistor,4,http://www.vishay.com/docs/28724/mrs16m25.pdf,BC4264CT-ND
+43,Potentiometer,R_POT,RV2,100k,Potentiometer_Bourns_3006P_Horizontal,1,https://www.bourns.com/docs/Product-Datasheets/3006.pdf,3006P-104LF-ND
+44,Potentiometer,R_POT,RV1,50k,Potentiometer_Bourns_3006P_Horizontal,1,https://www.bourns.com/docs/Product-Datasheets/3006.pdf,3006P-503LF-ND
+45,quad 2-input NAND gate,7400,U6 U7,74HCT00,DIP-14,2,http://www.ti.com/lit/ds/symlink/cd74hc74.pdf,296-2081-5-ND
+46,hex inverter,74HC04,U5 U9,74HCT04,DIP-14,2,http://www.ti.com/lit/ds/symlink/cd74hc04.pdf,296-2083-5-ND
+47,Decoder 3 to 8 active low outputs,74LS138,U8,74HCT138,DIP-16_W7.62mm_Socket,1,http://www.ti.com/lit/ds/symlink/cd74hc138.pdf,296-2091-5-ND
+48,8-bit Buffer/Line Driver 3-state,74HC244,U11,74HCT244,DIP-20_W7.62mm_Socket,1,http://www.ti.com/lit/ds/symlink/cd74hc240.pdf,296-2104-5-ND
+49,"Dual D Flip-flop, Set & Reset",74HC74,U4,74HCT74,DIP-14,1,http://www.ti.com/lit/ds/symlink/cd74hc74.pdf,296-2132-5-ND
+50,"Single Rail-to-Rail High Output Current Operational Amplifiers, SOIC-8",OP179GS,U13,AD744,DIP-8,1,http://www.analog.com/media/en/technical-documentation/data-sheets/OP179_279.pdf,AD744KNZ-ND
+51,,AD790,U3,AD790,DIP-8,1,https://www.analog.com/media/en/technical-documentation/data-sheets/AD790.pdf,AD790JNZ-ND
+52,Dual operational amplifier,Opamp_Dual_Generic,U1,AD826,DIP-8,1,https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf,AD826ANZ-ND
+53,"Dual High Speed, Low Power, Low Distortion, Voltage Feedback Amplifiers, DIP-8/SOIC-8",LM6172,U15,AD826,DIP-8,1,https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf,AD826ANZ-ND
+54,,ADC-AD1674,U10,ADC-AD1674,DIP-28_W15.24mm_Socket,1,https://www.analog.com/media/en/technical-documentation/data-sheets/AD1674.pdf,AD1674JNZ-ND
+55,"Single SPST Monolithic CMOS Analog Switch, normally OFF, 20Ohm Ron, DIP-8",DG418xJ,U2,DG418,DIP-8,1,http://www.vishay.com/docs/70051/dg417.pdf,DG418DJ-E3-ND
+56,"Dual High Speed, Low Power, Low Distortion, Voltage Feedback Amplifiers, DIP-8/SOIC-8",LM6172,U12 U14,LM6172,DIP-8,2,http://www.ti.com/lit/ds/symlink/lm6172.pdf,LM6172IN/NOPB-ND
+
+
+
+
+
+Component Groups:,56
+Component Count:,115
+Fitted Components:,115
+Number of PCBs:,1
+Total components:,115
+Schematic Version:,1
+Schematic Date:,2017-11-28
+BoM Date:,Tue 08 Jan 2019 11:19:12 PM EST
+Schematic Source:,/home/moritz/Sync/gdrive_princeton/workprojects/vintageibx/appleIIdev/ibxII-hardware/adcboard/adcboard.sch
+KiCad Version:,Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1
